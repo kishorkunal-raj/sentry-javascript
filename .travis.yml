@@ -35,3 +35,25 @@ jobs:
     - name: '@sentry/packages - build and test [node v14]'
       node_js: '14'
       script: scripts/test.sh
+# Adding ppc64le jobs
+    - name: '@sentry/packages - build and test [node v6]'
+      node_js: '6'
+      script: scripts/test.sh
+      arch: ppc64le
+    - name: '@sentry/packages - build and test [node v8]'
+      node_js: '8'
+      script: scripts/test.sh
+      arch: ppc64le
+    - name: '@sentry/packages - build and test [node v10]'
+      node_js: '10'
+      script: scripts/test.sh
+      arch: ppc64le
+    - name: '@sentry/packages - build and test [node v12]'
+      node_js: '12'
+      script: scripts/test.sh
+      arch: ppc64le
+    - name: '@sentry/packages - build and test [node v14]'
+      node_js: '14'
+      script: scripts/test.sh
+      arch: ppc64le
+
